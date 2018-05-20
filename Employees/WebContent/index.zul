@@ -1,0 +1,19 @@
+<?init class="org.zkoss.zk.ui.util.Composition" arg0="dash.zul"?>
+<?link rel="shortcut icon" type="image/x-icon" href="/images/inven.ico"?>
+<?page title="Employees"?>
+<?component name="button" extends="button" width="44px" height="44px"?>
+<?link rel="stylesheet" type="text/css"	href="/aplicaciones/bootstrap/css/bootstrap.css" ?>
+<?link rel="stylesheet" type="text/css" href="/aplicaciones/css/index.css.dsp" ?>
+<?link rel="stylesheet" type="text/css" href="/aplicaciones/css/user-nav.css.dsp" ?>
+<?link rel="stylesheet" type="text/css" href="/aplicaciones/css/sidebar.css.dsp" ?>
+<?link rel="stylesheet" type="text/css" href="/aplicaciones/css/search.css.dsp" ?>
+<?link rel="stylesheet" type="text/css" href="/aplicaciones/css/content-header.css.dsp" ?>
+<?link id="theme" rel="stylesheet" type="text/css" href="/aplicaciones/css/grey.css.dsp"  if="${param.theme eq 'grey' or empty param.theme}"?>
+<?link id="theme" rel="stylesheet" type="text/css" href="/aplicaciones/css/red.css.dsp"  if="${param.theme eq 'red'}"?>
+<?link id="theme" rel="stylesheet" type="text/css" href="/aplicaciones/css/light-blue.css.dsp"  if="${param.theme eq 'light-blue'}"?>
+<?link rel="shortcut icon" type="image/x-icon" href="/images/inven.ico"?>
+
+<zk>
+	<include id="mainInclude" self="@define(content)" src="none.zul"/>
+
+</zk>

@@ -1,0 +1,95 @@
+<?page title="Dept Manager" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window sclass="modal" title="Dept Manager" id="deptManagerCRUD"
+		border="normal" width="50%" mode="modal" maximizable="false"
+		closable="true"  position="center,parent"
+		apply="org.zkoss.bind.BindComposer"
+		viewModel="@id('vm') @init('com.vista.dept_manager.OperacionesDeptManager')"
+		validationMessages="@id('vmsgs')"
+		contentSclass="background-NewWindow">
+		<panel width="100%">
+			<panelchildren>
+				<separator />
+				<grid sclass="vgrid">
+					<columns>
+						<column />
+						<column />
+						<column />
+					</columns>
+					<rows>
+						<row>
+						<label value="Name Empleado" />
+							<cell colspan="3">
+								<combobox 
+									model="@load(vm.showEmployees)" id="cmbemployee" readonly="true"
+									selectedItem="@bind(vm.employee)">
+									<template name="model" var="p1">
+										<comboitem
+											value="@load( p1.emp_no)" label="@load( p1.first_name) " />
+									</template>
+								</combobox>
+
+							</cell>
+							
+								<label id="m1" sclass="validation"
+									value="@bind(vmsgs[cmbemployee])" />
+							
+						</row>
+							<row>
+						<label value="Name Depto" />
+							<cell colspan="3">
+								<combobox 
+									model="@load(vm.showDepartments)" id="cmbdepartment" readonly="true"
+								 selectedItem="@bind(vm.department)">
+									<template name="model" var="p1">
+										<comboitem
+											value="@load( p1.dept_no)" label="@load( p1.dept_name) " />
+									</template>
+								</combobox>
+
+							</cell>
+							
+								<label id="m2" sclass="validation"
+									value="@bind(vmsgs[cmbdepartment])" />
+							
+						</row>
+					     <row>
+							<label value="From Date" />
+							<cell colspan="3">
+								<datebox id="fromdate"
+									value="@load(vm.from_date) @save(vm.from_date,before='saveThis')"
+									format="yyyy-MM-dd" />
+							</cell>
+							
+								<label id="re1" sclass="validation"></label>
+							
+						</row>
+					   <row>
+							<label value="To Date" />
+							<cell colspan="3">
+								<datebox id="todate"
+									value="@load(vm.to_date) @save(vm.to_date,before='saveThis')"
+									format="yyyy-MM-dd" />
+							</cell>
+							
+								<label id="re2" sclass="validation"
+									value="@bind(vmsgs[todate])" />
+							
+						</row>
+					</rows>
+				</grid>
+			</panelchildren>
+		</panel>
+		<separator />
+		<separator />
+		<separator />
+		<div align="center">
+			<button iconSclass="z-icon-save" label="Guardar" mold="trendy" zclass="btn" 
+				onClick="@command('saveThis')" sclass="btn-success "
+				 />
+			<button zclass="btn" iconSclass="z-icon-undo" sclass="btn-danger " label="Cancelar" onClick="@command('closeThis')"
+				mold="trendy"/>
+		</div>
+		<separator />
+	</window>
+</zk>

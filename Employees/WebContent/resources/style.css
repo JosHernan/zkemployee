@@ -1,0 +1,703 @@
+
+div.z-window,
+div.z-window-header,
+.banner,
+.footer
+ {
+    color: black;
+	background-color:white;
+}
+
+.z-loading { top: 50% !important; left: 45% !important; align:
+		center; vertical-align: middle; }
+
+
+
+div.z-window-header  {
+	margin-left: 32px;
+	color: #FFF;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.banner {
+	color:  black;
+	padding: 5px 5px
+}
+#infoModulo{
+	position: relative;
+	float: left;
+	margin-bottom: 2px;
+}
+#gradientBG{
+    /* fallback (Opera) */
+    background: #008800;
+
+    /* Mozilla: */
+    background: -moz-linear-gradient(top, #003A8C, #17529c);
+    /* Chrome, Safari:*/
+    background: -webkit-gradient(linear,
+                left top, left bottom, from(#003A8C), to(#17529c));
+    /* MSIE */
+    filter: progid:DXImageTransform.Microsoft.Gradient(
+                StartColorStr='#003A8C', EndColorStr='#17529c', GradientType=0);
+    
+    /* MSIE 10*/
+    background: -ms-linear-gradient(top, #003A8C 0%, #17529C 100%);
+    /*background: linear-gradient(to bottom, #003A8C 0%, #17529C 100%);*/
+    
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.banner-head {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin-left: 16px;
+	font-size: 36px;
+	line-height: 36px;
+	letter-spacing: 20px;
+	cursor: default;
+}
+
+.footer {
+	color:  black;
+	padding-top: 5px;
+	padding-left: 20px
+}
+
+.z-center {
+	margin-top: 16px;
+}
+
+.z-navbar {
+	margin: 16px;
+}
+.z-nav-info {
+	background: #555555;
+}
+.z-navbar-vertical .z-nav-content:before,
+.z-navbar-vertical .z-navitem-selected .z-navitem-content,
+.z-navbar-vertical .z-navitem-selected:hover .z-navitem-content,
+.z-navbar-horizontal .z-nav-content:before,
+.z-navbar-horizontal .z-navitem-selected .z-navitem-content,
+.z-navbar-horizontal .z-navitem-selected:hover .z-navitem-content,
+.z-navbar-collapsed > ul > .z-navitem-selected:hover >.z-navitem-content,
+.z-nav-popup .z-navitem-selected .z-navitem-content,
+.z-nav-popup .z-navitem-selected:hover .z-navitem-content  {
+	background: #102d35;
+}
+.z-navitem-content[disabled] span {
+	text-decoration: line-through;
+}
+
+body {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	  /* fallback (Opera) */
+    background: #008800;
+
+    /* Mozilla: */
+    background: -moz-linear-gradient(top, #003A8C, #17529c);
+    /* Chrome, Safari:*/
+    background: -webkit-gradient(linear,
+                left top, left bottom, from(#003A8C), to(#17529c));
+    /* MSIE */
+    filter: progid:DXImageTransform.Microsoft.Gradient(
+                StartColorStr='#003A8C', EndColorStr='#17529c', GradientType=0);
+    
+    /* MSIE 10*/
+    background: -ms-linear-gradient(top, #003A8C 0%, #17529C 100%);
+    /*background: linear-gradient(to bottom, #003A8C 0%, #17529C 100%);*/
+    
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+a{
+	text-decoration: none;
+}
+
+/* Para la sección del encabezado */
+.logoBancoppel{
+	float: left;
+	padding-right: 75px;
+}
+
+.infoModulo{
+	position: relative;
+	float: left;
+	margin-bottom: 2px;
+}
+
+.infoModulo .txtInfoModulo{
+	position: absolute;
+	bottom: 0px;
+	left: 60px; 
+	font-size: 36px;
+}
+
+.headerDst .tiempo{
+	position: absolute;
+	float: left;
+	width: 350px;
+	bottom: 0.7em;
+	right: 0;
+}
+
+.headerDst .tiempo .datosFecha{
+	position: relative;
+	float: left;
+	width: 74%;
+}
+
+.headerDst .tiempo .hora{
+		position: relative; 
+		float: left;
+		width: 25%;
+		text-align: right;
+}
+
+/* Fin de la sección de encabezado */
+
+
+
+
+/* Sección de menu */
+#menuCnt{
+	position: absolute;
+	top: 81px;
+	left: 5px;
+	float: left;
+	z-index: 1801 !important;
+}
+
+.userMenuBarWrapper{
+	position: relative;
+	/*width: 217px;*/
+	height: 30px;
+	top: 0px;
+	margin-right: 0px;
+	margin-left: auto;
+}
+
+.userMenuCnt{
+	position: absolute;
+	right: 0;
+}
+
+.toolBarWrapper{
+	position: absolute;
+	/*width: 217px;*/
+	height: 30px;
+	top: 2px;
+	margin-right: auto;
+	margin-left: 0px;
+}
+
+.toolbarCnt{
+	position: absolute;
+	left: 0;
+}
+
+.toolbarCnt div{
+	float: left;
+}
+
+.nombreModulos {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+	color: #797979;
+}
+
+
+/* Sección del footer */
+.footerDst .datosEmpleado{
+	position: absolute;
+	float: left;
+	width: 410px;
+	right: 0;
+	margin-top: 0.5em;
+}
+
+.footerDst .datosEmpleado .nomEmpleado{
+	position: relative;
+	float: left;
+	width: 74%;
+	/*border: 1px solid black;*/
+}
+
+.footerDst .datosEmpleado .numEmpleado{
+	position: relative;
+	width: 25%;
+	right: 0;
+	float: left;
+	text-align: right;
+	/*border: 1px solid blue;*/
+}
+
+
+/* Fin de sección del footer */
+
+
+
+.panel .middle .mm{
+	width: 275px; 
+	float: left; 
+	height: 480px;
+	overflow: auto; 
+	background: #EBEFF3;
+	z-index: 99999;
+}
+
+
+
+/* Inicio formato de tablas listbox*/
+.z-listheader-content{
+   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    padding: 4px 5px;
+    line-height: 24px;
+    overflow: hidden;
+}
+.z-listheader {
+	
+	  background: linear-gradient(to bottom,#5f5e5e 0,#6d6c6c 100%);
+	}
+/* Fin formato tablas*/
+
+
+
+/* formato menu bar*/
+
+.container,.z-menubar-hor,.z-menubar-ver {
+    border: 1px solid #D8D8D8;
+   display: inline-block; 
+}
+.z-menubar-hor {
+    width: 580px;
+}
+.z-menubar {
+    display: inline-block;
+    border-top: 1px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
+    padding: 3px 0;
+    background: -webkit-linear-gradient(top, #fefefe 0%, #eeeeee 100%);
+    background: linear-gradient(to bottom, #fefefe 0%, #eeeeee 100%);
+    position: relative;
+}
+ 
+.container {
+    padding: 5px;
+}
+ 
+.z-menu-item-body {
+    padding: 5px 2px;
+}
+.z-menubar-ver .z-menu-body,
+.z-menubar-ver .z-menu-item-body {
+    width: 140px !important;
+}
+ 
+.z-menubar-ver .z-menu-item-body .z-menu-item-inner-m,
+.z-menubar-ver .z-menu-body .z-menu-item-inner-m,
+.z-menubar-ver .z-menu-item-body .z-menu-inner-m,
+.z-menubar-ver .z-menu-body .z-menu-inner-m {
+    text-align: left;
+}
+ 
+.mo_head {
+    font-size: 24px;
+    font-weight: normal;
+    color: #F26522;
+    margin-bottom: 0px;
+}
+ 
+.mo_footer {
+    background: #202020;
+    width: 582px;
+    height: 20px;
+    color: #c6c6c6;
+    text-align: center;
+}
+
+
+
+
+/* Test de menu data*/
+
+
+@CHARSET "ISO-8859-1";
+.itemMenu{
+	cursor: pointer;
+}
+
+.itemSubMenu{
+	margin-left: 0.5em;
+}
+
+div.trigger{
+	position: absolute;
+	width: 25px;
+	height: 115px;
+	background-color: transparent;
+	background-image: url('menu.png');
+	display: block;
+	float: left;
+	z-index: 99999;
+}
+
+div.trigger:hover{
+	background-image: url('menu.png');
+	z-index: 99999;
+}
+
+.panel {
+	position: absolute;
+	left: 23px;
+	top: 0px;
+	width: 300px;
+	height: 510px;
+	overflow: none;
+	float: left;
+	z-index: 99999;
+}
+
+/* Para las imágenes que componene el marco del menu */
+.panel .top{
+	height: 10px;
+	z-index: 99999;
+}
+
+.panel .top .tl{
+	width: 5px; 
+	float: left; 
+	height: 10px; 
+	background-image: url('linea.png');
+	z-index: 99999;
+}
+
+.panel .top .tm{
+	width: 275px;
+	float: left; 
+	height: 10px; 
+	background-image: url('linea.png');
+	z-index: 99999;
+}
+
+.panel .top .tr{
+	width: 10px; 
+	float: left; 
+	height: 10px;
+	background-image: url('linea.png');
+	z-index: 99999;
+}
+
+.panel .middle{
+	height: 480px;
+	z-index: 99999;
+}
+
+.panel .middle .ml{
+	width: 5px; 
+	float: left; 
+	height: 480px; 
+	background-image: url('sepa.png');
+	z-index: 99999;
+}
+
+.panel .middle .mm{
+	width: 275px; 
+	float: left; 
+	height: 480px;
+	overflow: auto; 
+	background: #EBEFF3;
+	z-index: 99999;
+}
+
+.panel .middle .mr{
+	position: relative;
+	left: 0px;
+	width: 10px; 
+	float: left; 
+	height: 480px;
+	background-image: url('sepa.png');
+	z-index: 99999;
+	top: 0px;
+}
+
+.panel .bottom{
+	height: 10px;
+	z-index: 99999;
+}
+
+.panel .bottom .bl{
+	width: 5px; 
+	float: left; 
+	height: 10px; 
+	background-image: url('sepa.png');
+	z-index: 99999;
+}
+
+.panel .bottom .bm{
+	width: 275px;
+	/*width: 265px;*/ 
+	float: left; 
+	height: 10px; 
+	background-image: url('sepa.png');
+	z-index: 99999;
+}
+
+.panel .bottom .br{
+	width: 10px; 
+	float: left; 
+	height: 10px;
+	background-image: url('sepa.png');
+	z-index: 99999;
+}
+
+.menuSeparador{
+	height: 2px;
+	background-image: url('sepa.png');
+	z-index: 99999;
+}
+
+/* Fin para las imágenes que componene el marco del menu */
+.plus{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2px;
+	width: 16px;
+	height: 30px;
+	cursor: pointer;
+	background:url('menu.png') 85% 55% no-repeat;
+	z-index: 99999;
+}
+
+.plusHover{
+	background:url('menu.png') 85% 55% no-repeat;
+	z-index: 99999;
+}
+
+.minus {
+	background: url('menu.png') 85% 55% no-repeat;
+	z-index: 99999;
+}
+
+.mas {
+	background: url('menu.png') 85% 55% no-repeat;
+	z-index: 99999;
+}
+
+.mas:hover{
+	background:url('menu.png') 85% 55% no-repeat;
+	z-index: 99999;
+}
+
+/* Estilo para el componente árbol que forma el menu */
+.menuArbol DIV.z-tree{
+	border: 0px solid !important;
+	overflow: none !important;
+}
+
+.menuArbol .z-tree-body{
+	background: none transparent;
+	overflow: none;
+	/*overflow: hidden;*/
+}
+
+.menuArbol .z-tree-body .z-treecell{
+	padding: 0;
+}
+.menuArbol .z-treecell-cnt{
+	padding: 0;
+	border: none;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	position: inherit;
+}
+
+.menuArbol .z-tree-line{
+	width: 10px !important;
+}
+
+.menuArbol .z-tree-tee{
+	width: 0px !important;
+}
+
+.menuArbol .z-tree-last{
+	width: 0px !important;
+}
+
+.menuArbol td.z-treecell{
+	border: none;
+}
+
+/* Icono de apertura de submenu*/
+.menuArbol .z-tree-root-open{
+	position: absolute;
+	margin-left: 250px;
+}
+
+.menuArbol .z-tree-root-close{
+	position: absolute;
+	margin-left: 250px;
+}
+
+/* Nivel 2 */
+.menuArbol .z-tree-tee-open{
+	position: absolute;
+	margin-left: 240px;
+	float: left;
+}
+
+.menuArbol .z-tree-tee-close{
+	position: absolute;
+	margin-left: 240px;
+	float: left;
+}
+
+.menuArbol .z-tree-last-open{
+	position: absolute;
+	margin-left: 240px;
+	float: left;
+}
+
+
+.menuArbol span.z-tree-root-open, 
+	.menuArbol span.z-tree-tee-open, 
+	.menuArbol span.z-tree-last-open,
+	.menuArbol span.z-tree-root-close, 
+	.menuArbol span.z-tree-tee-close,
+	.menuArbol span.z-tree-last-close {
+	background-image: url('arrow.png');
+}
+sp
+
+/* Clases para el menu radial */
+.container{
+	margin-top: 0;
+	position: absolute !important;
+}
+
+.claseModulo{
+	color:#abc;
+	background-color:#def;
+	width:80px;
+	height:80px;
+}
+
+#radial_container{
+	position:relative; 
+	left: 0px; 
+	top: 0px; 
+	width:100px; 
+	height:100px; 
+	text-align:center;
+}
+
+.radial_div_item{
+	background-color:none;
+	height:30px;
+	padding:10px;
+	color:#234;
+}
+
+.radial_div_item.active{
+	background-color:#511; color:white;
+	padding: 10px; 
+	-moz-border-radius:40px;
+	z-index:100;
+}
+
+
+
+
+
+
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/* Start: Action Images- Edit
+---------------------------------------------- */
+.fimageedit {
+	width: 25px;
+	background-image: url('../images/EditRecord.png');
+	background-repeat: no-repeat;
+	border: 0 none;
+	cursor: pointer;
+}
+
+/* End: Action Images - Edit
+---------------------------------------------- */
+
+/* Start: Action Images- Delete
+---------------------------------------------- */
+.fimageDelete {
+	width: 25px;
+	background-image: url('../images/DeleteRecord.png');
+	background-repeat: no-repeat;
+	border: 0 none;
+	cursor: pointer;
+}
+
+
+        .breeze .complex-layout, .breeze .complex-layout .z-south,
+        .breeze .complex-layout .z-west { background: #F7F7F7; }
+        .z-borderlayout { background: #eac82a; } 
+        .complex-layout .z-north
+        { background: #FFFFFF; } 
+        img.complex-layout-header-img { padding: 0 10px; } 
+        .complex-layout-header-label { position:
+        relative; top: -30px; padding-left: 40px; font-size: 24px;
+        color: #eac82a; font-weight: bold; } .inner-border, .inner-border
+        .z-north, .inner-border .z-west, .inner-border .z-south,
+        .inner-border .z-east { background: #eac82a; }
+        .dl-link {
+        text-decoration: none; cursor: pointer; }

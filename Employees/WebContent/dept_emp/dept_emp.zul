@@ -1,0 +1,97 @@
+<?page title="Views dept_emp" contentType="text/html;charset=UTF-8"?>
+<?link rel="stylesheet" type="text/css"	href="style_tabla.css" ?>
+<zk>
+<style>
+.z-listheader-content {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    color: #333;
+    padding: 4px 8px;
+    line-height: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.z-listcell-content, .z-listgroup-content, .z-listgroupfoot-content, .z-listfooter-content {
+    font-family: "Open Sans",Arial,Sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    font-style: normal;
+    color: #555;
+    padding: 3px 4px 4px;
+    line-height: 24px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+<!-- @load (...): se utiliza para vincular datos y comandos junto con parámetros para cargar datos al destino
+
+@save (...): se utiliza para vincular datos y comandos junto con parámetros para guardar datos.
+
+@bind (...): se utiliza para vincular datos junto con parámetros para cargar y guardar.
+
+@bind (...) es un acceso directo para @load (...) @save (...), y @save se ignora automáticamente si la propiedad no lo admite -->
+
+
+
+</style>
+	<window id="dept_emp" border="none"
+		apply="org.zkoss.bind.BindComposer"
+		viewModel="@id('vm') @init('com.vista.dept_emp.VistaDeptEmp')">
+		<!-- <div align="right">
+			<label value="Exportar a: " sclass="sectionTitleLabel" />
+			<image src="/images/pdf.png"
+				onClick="@command('onShowReport', typedoc='pdf')" />
+			<image src="/images/word.png"
+				onClick="@command('onShowReport', typedoc='rtf')" />
+			<image src="/images/excel.png"
+				onClick="@command('onShowReport', typedoc='xls')" />
+
+		</div>-->
+	    <div align="left">
+					
+			<!--  <button iconSclass="z-icon-plus" sclass="btn-success" zclass="btn" label="Agregar dept_manager" onClick="@command('onAddNew')"/>-->
+					
+					
+				</div>
+				<separator />
+				<separator />
+				<div>
+			<listbox width="100%" id="" mold="paging" pageSize="10"  
+				pagingPosition="bottom" selectedItem="@bind(vm.selectedItem)"
+				model="@load(vm.showDeptEmp)">
+					
+				<listhead sizable="true">
+					<listheader align="center"
+						style="background:yellow;color:black;" label="Name Emp"
+						sortDirection="ascending" sort="auto(name_emp)" />
+					<listheader align="left" label="Department Name" />
+					<listheader align="left" label="From Date" />
+					<listheader align="left" label="To Date" />
+					<listheader align="left" label="" width="80px" />
+				</listhead>
+				<template name="model" var="p1">
+					<listitem>
+						<listcell label="@load(p1.name_emp)"  />
+						<listcell label="@load(p1.name_dept)" />
+						<listcell label="@load(p1.from_date)" />
+						<listcell label="@load(p1.to_date)" />
+						<listcell>
+							<hbox spacing="15px">
+							<button tooltiptext="Edit dept_manager" iconSclass="z-icon-edit" sclass="btn-primary btn-mini" zclass="btn" onClick="@command('onEdit',dept_empRecord=p1)"/>
+							<!--  <button  tooltiptext="Delete dept_manager" iconSclass="z-icon-trash" sclass="btn-danger btn-mini" zclass="btn"  onClick="@command('onDelete',dept_empRecord=p1)" />-->
+							</hbox>
+						</listcell>
+					</listitem>
+				</template>
+			</listbox>
+		</div>
+		<separator />
+		<separator />
+		<separator />
+		<separator />
+		<separator />
+	</window>
+</zk>

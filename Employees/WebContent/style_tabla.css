@@ -1,0 +1,24 @@
+.z-listheader-content {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    color: #fff;
+    padding: 4px 8px;
+    line-height: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.z-listcell-content, .z-listgroup-content, .z-listgroupfoot-content, .z-listfooter-content {
+    font-family: "Open Sans",Arial,Sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    font-style: normal;
+    color: #555;
+    padding: 3px 4px 4px;
+    line-height: 24px;
+    overflow: hidden;
+    cursor: pointer;
+}
+

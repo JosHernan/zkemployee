@@ -1,0 +1,19 @@
+<Context>
+<Resource name="jdbc/MyDB" username="root" password="root"
+    url="jdbc:mysql://localhost:3306/employees?zeroDateTimeBehavior=convertToNull"
+    auth="Container" defaultAutoCommit="false"
+    driverClassName="com.mysql.jdbc.Driver" maxActive="100"
+    timeBetweenEvictionRunsMillis="60000"
+    type="javax.sql.DataSource" 
+    validationQuery="SELECT 1"
+    validationInterval="30000"
+    minIdle="10"
+    maxWait="10000"
+    initialSize="10"
+    removeAbandonedTimeout="60"
+    removeAbandoned="true"
+    logAbandoned="true"
+    minEvictableIdleTimeMillis="30000"
+/>
+
+</Context>

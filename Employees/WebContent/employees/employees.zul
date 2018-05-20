@@ -1,0 +1,100 @@
+<?page title="Views employees" contentType="text/html;charset=UTF-8"?>
+<?link rel="stylesheet" type="text/css"	href="style_tabla.css" ?>
+<zk>
+<style>
+.z-listheader-content {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    color: #333;
+    padding: 4px 8px;
+    line-height: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.z-listcell-content, .z-listgroup-content, .z-listgroupfoot-content, .z-listfooter-content {
+    font-family: "Open Sans",Arial,Sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    font-style: normal;
+    color: #555;
+    padding: 3px 4px 4px;
+    line-height: 24px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+<!-- @load (...): se utiliza para vincular datos y comandos junto con parámetros para cargar datos al destino
+
+@save (...): se utiliza para vincular datos y comandos junto con parámetros para guardar datos.
+
+@bind (...): se utiliza para vincular datos junto con parámetros para cargar y guardar.
+
+@bind (...) es un acceso directo para @load (...) @save (...), y @save se ignora automáticamente si la propiedad no lo admite -->
+
+
+
+</style>
+	<window id="Employees" border="none"
+		apply="org.zkoss.bind.BindComposer"
+		viewModel="@id('vm') @init('com.vista.employees.VistaEmployees')">
+		<!-- <div align="right">
+			<label value="Exportar a: " sclass="sectionTitleLabel" />
+			<image src="/images/pdf.png"
+				onClick="@command('onShowReport', typedoc='pdf')" />
+			<image src="/images/word.png"
+				onClick="@command('onShowReport', typedoc='rtf')" />
+			<image src="/images/excel.png"
+				onClick="@command('onShowReport', typedoc='xls')" />
+
+		</div>-->
+	    <div align="left">
+					
+			<button iconSclass="z-icon-plus" sclass="btn-success" zclass="btn" label="Agregar Employee" onClick="@command('onAddNew')"/>
+					
+					
+				</div>
+				<separator />
+				<separator />
+				<div>
+			<listbox width="100%" id="" mold="paging" pageSize="10"  
+				pagingPosition="bottom" selectedItem="@bind(vm.selectedItem)"
+				model="@load(vm.showEmployees)">
+				<listhead sizable="true">
+					<listheader align="center"
+						style="background:yellow;color:black;" label="Emp_No"
+						sortDirection="ascending" sort="auto(emp_no)" />
+					<listheader align="left" label="Birth Date" />
+					<listheader  align="center" label="First Name" />
+					<listheader  align="center" label="Last Name" />
+					<listheader  align="center" label="Gender" />
+					<listheader  align="center" label="Hire Date" />
+					<listheader align="left" label="" width="80px" />
+				</listhead>
+				<template name="model" var="p1">
+					<listitem>
+						<listcell label="@load(p1.emp_no)"  />
+						<listcell label="@load(p1.birth_date)" />
+						<listcell label="@load(p1.first_name)" />
+						<listcell label="@load(p1.last_name)" />
+						<listcell label="@load(p1.gender)"  />
+						<listcell label="@load(p1.hire_date)"  />
+						<listcell>
+							<hbox spacing="15px">
+							<button tooltiptext="Edit employee" iconSclass="z-icon-edit" sclass="btn-primary btn-mini" zclass="btn" onClick="@command('onEdit',employeeRecord=p1)"/>
+							<button  tooltiptext="Delete employee" iconSclass="z-icon-trash" sclass="btn-danger btn-mini" zclass="btn"  onClick="@command('onDelete',employeeRecord=p1)" />
+							</hbox>
+						</listcell>
+					</listitem>
+				</template>
+			</listbox>
+		</div>
+		<separator />
+		<separator />
+		<separator />
+		<separator />
+		<separator />
+	</window>
+</zk>

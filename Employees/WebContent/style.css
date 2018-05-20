@@ -1,0 +1,367 @@
+
+
+
+
+    
+		body {
+		  /* Location of the image */
+            background-image: url("${pageContext.request.contextPath}/resources/images/bk11.png");
+		  
+		  /* Background image is centered vertically and horizontally at all times */
+		  background-position: center center;
+		  
+		  /* Background image doesn't tile */
+		  background-repeat: no-repeat;
+		  
+		  /* Background image is fixed in the viewport so that it doesn't move when 
+		     the content's height is greater than the image's height */
+		  background-attachment: fixed;
+		  
+		  /* This is what makes the background image rescale based
+		     on the container's size */
+		  background-size: cover;
+		  
+		  /* Set a background color that will be displayed
+		     while the background image is loading */
+		  background-color: #192e65;
+		  
+		}		
+		
+		#wrapper-login{
+		 width:424px;
+		 height: 360px;
+		 margin: auto;
+		 margin-top: 100px;
+
+		}
+		
+		#head-login{
+		width: 100%;
+		height: 53px;
+/*         height: 199px;
+ */		}
+ 
+ 
+		
+		#content-login{
+/* 		border-top: solid 5px #d12a33;
+		background-image: url("${pageContext.request.contextPath}/resources/images/bklogin.png"); */
+		width: 100%;
+		height:250px;
+		}
+        
+        #info-login{
+           width: 87%;
+           margin: auto;
+           height: 230px;
+           margin-top: 26px;
+        }
+        
+      #boton1{
+         background-color: #9fcc00 !important;
+      }
+        
+       #boton1 a:hover{
+         background-color: #eaeaea !important;
+        }
+       
+       #logo-login{
+
+        }
+        
+        .titulo-login{
+		    color: #fff;
+		    font-stretch: extra-condensed;
+		    font-weight: bold;
+		    font-size: 18px;
+		    text-transform: uppercase;
+		    text-shadow: -1px 1px #000;
+        }    
+        
+        .errorx{
+         border: 1px solid red;
+        }
+      .modal {display:block}
+      .modal-dialog {
+          width: 424px;
+          }
+       .modal-content {border-radius: 0px 0px 6px 6px;}
+       .modal-header {
+       	background-color:#004990;
+       	/* background: url("${pageContext.request.contextPath}/resources/images/lowes.png") no-repeat  center 8px; */
+       	height:50px;
+       	border-radius: 6px 6px 0px 0px;
+       }
+    
+    
+    
+
+.z-loading { top: 50% !important; left: 45% !important; align:
+		center; vertical-align: middle; }
+
+
+
+div.z-window-header  {
+	margin-left: 32px;
+	color: #FFF;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+div.z-window,
+div.z-window-header,
+.banner,
+.footer
+ {
+	background-color:white;
+}
+.banner {
+	color:  black;
+	padding: 5px 5px
+}
+#infoModulo{
+	position: relative;
+	float: left;
+	margin-bottom: 2px;
+}
+#gradientBG{
+    /* fallback (Opera) */
+    background: #008800;
+
+    /* Mozilla: */
+    background: -moz-linear-gradient(top, #003A8C, #17529c);
+    /* Chrome, Safari:*/
+    background: -webkit-gradient(linear,
+                left top, left bottom, from(#003A8C), to(#17529c));
+    /* MSIE */
+    filter: progid:DXImageTransform.Microsoft.Gradient(
+                StartColorStr='#003A8C', EndColorStr='#17529c', GradientType=0);
+    
+    /* MSIE 10*/
+    background: -ms-linear-gradient(top, #003A8C 0%, #17529C 100%);
+    /*background: linear-gradient(to bottom, #003A8C 0%, #17529C 100%);*/
+    
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.banner-head {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin-left: 16px;
+	font-size: 36px;
+	line-height: 36px;
+	letter-spacing: 20px;
+	cursor: default;
+}
+
+.footer {
+	color:  black;
+	padding-top: 5px;
+	padding-left: 20px
+}
+
+.z-center {
+	margin-top: 16px;
+}
+
+.z-navbar {
+	margin: 16px;
+}
+.z-nav-info {
+	background: #555555;
+}
+.z-navbar-vertical .z-nav-content:before,
+.z-navbar-vertical .z-navitem-selected .z-navitem-content,
+.z-navbar-vertical .z-navitem-selected:hover .z-navitem-content,
+.z-navbar-horizontal .z-nav-content:before,
+.z-navbar-horizontal .z-navitem-selected .z-navitem-content,
+.z-navbar-horizontal .z-navitem-selected:hover .z-navitem-content,
+.z-navbar-collapsed > ul > .z-navitem-selected:hover >.z-navitem-content,
+.z-nav-popup .z-navitem-selected .z-navitem-content,
+.z-nav-popup .z-navitem-selected:hover .z-navitem-content  {
+	background: #102d35;
+}
+.z-navitem-content[disabled] span {
+	text-decoration: line-through;
+}
+
+body {
+	font-family: Sans-serif;
+	letter-spacing: 1px;
+	 /* fallback (Opera) */
+    background: #008800;
+
+    /* Mozilla: */
+    background: -moz-linear-gradient(top, #003A8C, #17529c);
+    /* Chrome, Safari:*/
+    background: -webkit-gradient(linear,
+                left top, left bottom, from(#003A8C), to(#17529c));
+    /* MSIE */
+    filter: progid:DXImageTransform.Microsoft.Gradient(
+                StartColorStr='#003A8C', EndColorStr='#17529c', GradientType=0);
+    
+    /* MSIE 10*/
+    background: -ms-linear-gradient(top, #003A8C 0%, #17529C 100%);
+    /*background: linear-gradient(to bottom, #003A8C 0%, #17529C 100%);*/
+    
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+/* Para la sección del encabezado */
+.logoBancoppel{
+	float: left;
+	padding-right: 75px;
+}
+
+.infoModulo{
+	position: relative;
+	float: left;
+	margin-bottom: 2px;
+}
+
+.infoModulo .txtInfoModulo{
+	position: absolute;
+	bottom: 0px;
+	left: 60px; 
+	font-size: 36px;
+}
+
+.headerDst .tiempo{
+	position: absolute;
+	float: left;
+	width: 350px;
+	bottom: 0.7em;
+	right: 0;
+}
+
+.headerDst .tiempo .datosFecha{
+	position: relative;
+	float: left;
+	width: 74%;
+}
+
+.headerDst .tiempo .hora{
+		position: relative; 
+		float: left;
+		width: 25%;
+		text-align: right;
+}
+
+/* Fin de la sección de encabezado */
+
+
+
+
+/* Sección de menu */
+#menuCnt{
+	position: absolute;
+	top: 81px;
+	left: 5px;
+	float: left;
+	z-index: 1801 !important;
+}
+
+.userMenuBarWrapper{
+	position: relative;
+	/*width: 217px;*/
+	height: 30px;
+	top: 0px;
+	margin-right: 0px;
+	margin-left: auto;
+}
+
+.userMenuCnt{
+	position: absolute;
+	right: 0;
+}
+
+.toolBarWrapper{
+	position: absolute;
+	/*width: 217px;*/
+	height: 30px;
+	top: 2px;
+	margin-right: auto;
+	margin-left: 0px;
+}
+
+.toolbarCnt{
+	position: absolute;
+	left: 0;
+}
+
+.toolbarCnt div{
+	float: left;
+}
+
+.nombreModulos {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+	color: #797979;
+}
+
+
+/* Sección del footer */
+.footerDst .datosEmpleado{
+	position: absolute;
+	float: left;
+	width: 410px;
+	right: 0;
+	margin-top: 0.5em;
+}
+
+.footerDst .datosEmpleado .nomEmpleado{
+	position: relative;
+	float: left;
+	width: 74%;
+	/*border: 1px solid black;*/
+}
+
+.footerDst .datosEmpleado .numEmpleado{
+	position: relative;
+	width: 25%;
+	right: 0;
+	float: left;
+	text-align: right;
+	/*border: 1px solid blue;*/
+}
+
+
+
+.panel .middle .mm{
+	width: 275px; 
+	float: left; 
+	height: 480px;
+	overflow: auto; 
+	background: #EBEFF3;
+	z-index: 99999;
+}
+
+
+
+/* Inicio formato de tablas listbox*/
+.z-listheader-content{
+   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    padding: 4px 5px;
+    line-height: 24px;
+    overflow: hidden;
+}
+.z-listheader {
+	
+	  background: linear-gradient(to bottom,#5f5e5e 0,#6d6c6c 100%);
+	}
+	
+	
+/* Fin formato tablas*/
